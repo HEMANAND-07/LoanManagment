@@ -20,7 +20,7 @@ public class LoanDatabase {
 	{
 		 try {
 			 Class.forName("com.mysql.jdbc.Driver");
-			 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root", "ramji007R#");
+			 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root", "xxxxxxx");
 		 	 } catch (Exception e) {
 		 		 		e.printStackTrace();
 		 	 	}
