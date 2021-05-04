@@ -18,13 +18,10 @@ import jakarta.ws.rs.PUT;
 public class MyResource {
 
 	LoanDatabase db = new LoanDatabase();
-	private String username ;
-	private String pass;
 	
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public DashBoard viewDashboard() {
-    System.out.println(username);
     	DashBoard d = new DashBoard();
     	d = db.fetchDashBoard();
     	return d;
